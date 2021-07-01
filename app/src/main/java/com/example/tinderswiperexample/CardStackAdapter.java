@@ -43,12 +43,13 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
 
     class ViewHolder extends RecyclerView.ViewHolder{
         ImageView movieImage;
-        TextView movieName, movieGenre;
+        TextView movieName, movieGenre, movieId;
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             movieImage = itemView.findViewById(R.id.movie_image);
             movieName = itemView.findViewById(R.id.movie_name);
             movieGenre = itemView.findViewById(R.id.movie_genre);
+            movieId = itemView.findViewById(R.id.movie_id);
         }
 
         void setData(ItemModel data) {
@@ -59,6 +60,7 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
                     .into(movieImage);
             movieName.setText(data.getMovieName());
             movieGenre.setText(data.getGenre());
+            movieId.setText(data.getMovieId());
 
         }
     }

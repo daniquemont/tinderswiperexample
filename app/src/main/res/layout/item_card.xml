@@ -9,13 +9,13 @@
     app:cardUseCompatPadding="true"
     app:cardPreventCornerOverlap="false"
     app:cardCornerRadius="8dp"
-    app:cardBackgroundColor="@android:color/holo_blue_bright">
+    >
 
     <ImageView
         android:id="@+id/movie_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:layout_height="560dp"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="26sp"/>
 
         <TextView
@@ -38,7 +38,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/movie_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="20sp"/>
 
     </LinearLayout>
@@ -67,7 +75,6 @@
     <FrameLayout
         android:id="@+id/bottom_overlay"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/overlay_black">
-    </FrameLayout>
+        android:layout_height="559dp"
+        android:background="@drawable/overlay_black"></FrameLayout>
 </androidx.cardview.widget.CardView>

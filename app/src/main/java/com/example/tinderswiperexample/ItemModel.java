@@ -1,15 +1,17 @@
 package com.example.tinderswiperexample;
 
 public class ItemModel {
+    private String movieId;
     private String movieName;
     private String genre;
-    private int movieImage;
+    private String movieImage;
 
     public ItemModel(){
 
     }
 
-    public ItemModel(int movieImage, String movieName, String genre){
+    public ItemModel(String movieId, String movieImage, String movieName, String genre){
+        this.movieId = movieId;
         this.movieImage = movieImage;
         this.movieName = movieName;
         this.genre = genre;
@@ -23,11 +25,11 @@ public class ItemModel {
         return genre;
     }
 
-    public int getMovieImage() {
+    public String getMovieImage() {
         return movieImage;
     }
 
-    public void setMovieImage(int movieImage) {
+    public void setMovieImage(String movieImage) {
         this.movieImage = movieImage;
     }
 
@@ -37,5 +39,13 @@ public class ItemModel {
 
     public void setMovieName(String movieName) {
         this.movieName = movieName;
+    }
+
+    public String getMovieId() {
+        return movieId;
+    }
+
+    public void setMovieId(String movieId) {
+        this.movieId = movieId;
     }
 }
